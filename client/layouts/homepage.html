@@ -1,0 +1,29 @@
+<!--main site template. containers navbar/tabs-->
+
+<template name="homepage">
+	<header>
+        <div style="height: 75px;" class="toolbar toolbar--material">
+		  <div  style="padding-bottom:10px; text-align: center; height: 75px; background-color: green; margin: 0px;" class="toolbar__center toolbar--material__center">
+		    <h3 style="margin-bottom: 10px; color: white;">GroupShop</h3>
+		  </div>
+		</div>
+		<div class="tabbar tabbar--top tabbar--material">
+		  <label class="tabbar__item tabbar--material__item">
+		    <input id="myList" type="radio" name="tabbar-material-a" checked="checked">
+		    <button class="tabbar__button tabbar--material__button">
+		      My Shopping List
+		    </button>
+		  </label>
+
+		  <label class="tabbar__item tabbar--material__item">
+		    <input id="groupList" type="radio" name="tabbar-material-a">
+		    <button class="tabbar__button tabbar--material__button">
+		      My Shopping Group
+		    </button>
+		  </label>
+		</div>
+	</header>
+	<main>
+		{{> Template.dynamic template=template}}
+	</main>
+</template>
