@@ -3,7 +3,10 @@
 <template name="homepage">
 	<header>
         <div style="height: 75px;" class="toolbar toolbar--material">
-		  <div  style="padding-bottom:10px; text-align: center; height: 75px; background-color: green; margin: 0px;" class="toolbar__center toolbar--material__center">
+          <div style="background-color: green; padding-left: 30px; height: 75px; position: absolute; z-index: 2;" class="toolbar__left toolbar--material__left">
+		    	{{> loginButtons}}
+		  </div>		
+		  <div style="padding-bottom:10px; text-align: center; height: 75px; background-color: green; margin: 0px;" class="toolbar__center toolbar--material__center">
 		    <h3 style="margin-bottom: 10px; color: white;">GroupShop</h3>
 		  </div>
 		</div>

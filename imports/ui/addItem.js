@@ -1,4 +1,5 @@
 import { Template } from 'meteor/templating';
+import { Meteor } from 'meteor/meteor';
 import './addItem.html';
 
 import { GroceryItems } from '../api/groceryItems.js';
@@ -17,6 +18,7 @@ Template.addItem.events({
 		GroceryItems.insert({
 			itemName: item,
 			createdAt: new Date(),
+			userId: Meteor.userId(),
 			private: false
 		})
 
