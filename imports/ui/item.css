@@ -1,3 +1,16 @@
 .active {
 	color:green !important;
 }
+
+.checked {
+	background-color: #adebad !important;
+	color: white !important;
+}
+
+.remove-item:hover{
+	background-color: #D0D0D0;
+}
+
+.make-private:hover{
+	background-color: #D0D0D0;
+}

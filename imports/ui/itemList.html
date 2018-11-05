@@ -1,7 +1,12 @@
 <!-- Unordered list of shopping item/ logic for rendering the list of items-->
 <template name="itemList">
+	<style type="text/css">
+		::-webkit-scrollbar { 
+    display: none; 
+}
+	</style>
 	{{#if groceryItems.count}}
-		<ul style="width: 90%; padding-bottom:1px; max-height:50vh; box-shadow: 3px 5px 4px #888888; border: 1px #DBDBDB solid; overflow: auto;" class="list list--material">
+		<ul style="width: 90%; margin: auto; padding-bottom:1px; max-height:50vh; box-shadow: 3px 5px 4px #888888; border: 1px #DBDBDB solid; overflow: auto;" class="list list--material">
 			{{#each groceryItems}}
 				{{> item}}
 			{{/each}}

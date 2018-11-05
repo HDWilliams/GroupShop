@@ -27,7 +27,14 @@ Template.item.events({
       		$set: { private: ! this.private },
     	})
 
-		$(`#${this._id}`).toggleClass('active')
+		$(`#${this._id}`).toggleClass('active');
 		
+	},
+	//change check off btn styles on mouseenter and leave
+	'mouseenter .checkoff'(event){
+		$(`#btn-${this._id}`).toggleClass('checked');
+	},
+	'mouseleave .checkoff'(event){
+		$(`#btn-${this._id}`).toggleClass('checked');
 	}
 })

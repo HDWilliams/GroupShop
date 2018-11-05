@@ -1,7 +1,7 @@
 <template name="item">
 	<li class="list-item list-item--material">
 	    <div class="list-item__left list-item--material__left">
-	      <button style="background-color: white;" class="checkoff fab fab--material fab--mini"><i style="color:green" class="zmdi zmdi-check"></i></button>
+	      <button id=btn-{{_id}} style="background-color: white;" class="checkoff fab fab--material fab--mini"><i style="color:green" class="zmdi zmdi-check"></i></button>
 	    </div>
 
 	    <label class="list-item__center list-item--material__center">
@@ -11,7 +11,7 @@
 	      <div class="list-item__label"><button class="make-private button--quiet"><i id={{_id}} style="color:gray;" class="zmdi zmdi-eye"></i></button></div>
 	    </div>
 	    <div class="list-item__right">
-	      <div class="list-item__label"><button class="remove-item button--quiet"><i style="color:red;" class="zmdi zmdi-delete"></i></button></div>
+	      <div class="list-item__label"><button style="" class="remove-item button--quiet"><i style="color:red;" class="zmdi zmdi-delete"></i></button></div>
 	    </div>
 	</li>
 </template>

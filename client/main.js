@@ -5,6 +5,7 @@ import './main.html';
 
 import './layouts/homepage.js';
 import './layouts/myshopping.js';
+import './layouts/loginpage.js';
 import '../imports/api/routes.js';
 import '../imports/ui';
 
