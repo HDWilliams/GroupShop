@@ -5,11 +5,10 @@ import { Accounts } from 'meteor/accounts-base';
 
 //routing for home page. determines which dynamic teplate to render within the homepage
 
-Accounts.onLogin(function() 
-	{ 
-		FlowRouter.redirect('/');
-	});
+//Accounts.onLogin(function() { FlowRouter.redirect('/'); }); 
 
+
+Accounts.onLogout(function() { FlowRouter.redirect('/login'); });
 
 FlowRouter.route('/', {
 	name: 'homepage',
@@ -31,4 +30,10 @@ FlowRouter.route('/login', {
 	}
 });
 
-Accounts.onLogout(function() { FlowRouter.redirect('/login'); });
+//test route, should be changed to change view using tabs
+FlowRouter.route('/groups', {
+	name: 'Grouppage',
+	action() {
+		BlazeLayout.render('homepage', {template: 'groupshopping'});
+	}
+});
