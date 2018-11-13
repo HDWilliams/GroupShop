@@ -1,0 +1,19 @@
+<template name="addGroup">
+	<ons-card style=" margin: auto; height: 30vh; width: 35vw; position: relative;"  modifier="material modifier2">
+	    	<div class="content">
+	    		<ons-button id="closeModal" style="position: absolute; top:0; right:0;" modifier="quiet">X</ons-button>
+	    		<form>
+	    			<legend><h4>Create A Group</h4></legend>
+	    			<div style="margin: auto;">
+		    			<p>
+					      <ons-input id="username" modifier="underbar" placeholder="Group Name" float></ons-input>
+					    </p>
+		    			<ons-input id="username" modifier="underbar" placeholder="Add Member(s) by Email" float></ons-input>
+					    <ons-fab style="position: absolute; bottom: 10px; right: 10px; background-color: gray;" id="sendModal" modifier="material modifier2"><ons-icon
+						  icon="ion-navicon, material:md-send">
+						</ons-icon></ons-fab>
+					</div>
+	    		</form>
+	    	</div>
+	    </ons-card>
+</template>
