@@ -11,7 +11,7 @@
     "@babel/runtime": "^7.0.0",
     "meteor-node-stubs": "^0.4.1",
     "onsenui": "^2.10.5",
-    "simpl-schema": "^1.5.3"
+    "simpl-schema": "^1.10.2"
   },
   "meteor": {
     "mainModule": {
